@@ -9,14 +9,15 @@ package ListaMusic;
  *
  * @author Franklin
  */
-public class NodoM {
+public class NodoCirM {
     
-   public String nombre, direccion;
-   public NodoM suguiente, anterior;
-
-    public NodoM(String nombre, String direccion){
-        this.nombre=nombre;
-        this.direccion = direccion;
+    String nombre;
+    NodoCirM siguiente,anterior;
+    
+    public NodoCirM(String entrada){
+        nombre=entrada;
+        siguiente=anterior=this;
     
     }
+    
 }
